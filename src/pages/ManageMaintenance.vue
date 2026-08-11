@@ -236,7 +236,7 @@ export default {
     align-items: center;
     gap: 10px;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 3px;
     transition: all ease-in-out 0.15s;
     justify-content: space-between;
     padding: 10px;

@@ -585,8 +585,8 @@ export default {
                     offsetY = centerY - height / 2;
                 }
 
-                // Calculate border radius based on current width (pill shape = half of width)
-                const borderRadius = width / 2;
+                // Slightly rounded rectangle (capped at half of width)
+                const borderRadius = Math.min(3, width / 2);
 
                 // Get color based on beat status
                 let color = this.getBeatColor(beat, colors);

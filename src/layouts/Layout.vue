@@ -341,7 +341,7 @@ main {
         padding-left: 0;
         padding-bottom: 0;
         margin-top: 8px !important;
-        border-radius: 16px;
+        border-radius: 3px;
         overflow: hidden;
 
         .dropdown-divider {

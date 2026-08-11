@@ -263,7 +263,7 @@ footer {
     }
 
     .menu-item {
-        border-radius: 10px;
+        border-radius: 3px;
         margin: 0.5em;
         padding: 0.7em 1em;
         cursor: pointer;
@@ -295,7 +295,7 @@ footer {
     .settings-content-header {
         width: calc(100% + 20px);
         border-bottom: 1px solid #dee2e6;
-        border-radius: 0 10px 0 0;
+        border-radius: 0 3px 0 0;
         margin-top: -20px;
         margin-right: -20px;
         padding: 12.5px 1em;

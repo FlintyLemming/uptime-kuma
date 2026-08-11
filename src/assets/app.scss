@@ -27,7 +27,7 @@ h2 {
 }
 
 textarea.form-control {
-    border-radius: 19px;
+    border-radius: 3px;
 }
 
 ::-webkit-scrollbar {
@@ -53,7 +53,7 @@ textarea.form-control {
 }
 
 .list-group {
-    border-radius: 0.75rem;
+    border-radius: 3px;
 
     .dark & {
         .list-group-item {
@@ -84,7 +84,7 @@ optgroup {
 // Scrollbar
 ::-webkit-scrollbar-thumb {
     background: #ccc;
-    border-radius: 20px;
+    border-radius: 3px;
 }
 
 .modal {
@@ -92,7 +92,7 @@ optgroup {
 }
 
 .modal-content {
-    border-radius: 1rem;
+    border-radius: 3px;
     box-shadow: 0 15px 70px rgba(0, 0, 0, 0.1);
 
     .dark & {
@@ -110,7 +110,7 @@ optgroup {
     //overflow: hidden;   // Forget why add this, but multiple select hide by this
     box-shadow: 0 15px 70px rgba(0, 0, 0, 0.1);
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 3px;
 
     &.big-padding {
         padding: 20px;
@@ -123,7 +123,7 @@ optgroup {
 }
 
 .btn-sm {
-    border-radius: 25px;
+    border-radius: 3px;
 }
 
 .btn-primary {
@@ -185,7 +185,7 @@ optgroup {
 .btn-outline-normal {
     padding: 4px 10px;
     border: 1px solid #ced4da;
-    border-radius: 25px;
+    border-radius: 3px;
     background-color: transparent;
 
     .dark & {
@@ -499,7 +499,7 @@ optgroup {
         display: block;
         text-decoration: none;
         padding: 13px 15px 10px 15px;
-        border-radius: 10px;
+        border-radius: 3px;
         transition: all ease-in-out 0.15s;
 
         &.disabled {
@@ -552,7 +552,7 @@ optgroup {
 [contenteditable="true"] {
     transition: all $easing-in 0.2s;
     background-color: rgba(239, 239, 239, 0.7);
-    border-radius: 8px;
+    border-radius: 3px;
 
     &.no-bg {
         background-color: transparent !important;
@@ -591,7 +591,7 @@ optgroup {
 }
 
 .vue-image-crop-upload .vicp-wrap {
-    border-radius: 10px !important;
+    border-radius: 3px !important;
 }
 
 .spinner {
@@ -621,7 +621,7 @@ h5.settings-subheading::after {
 .css-editor {
     /* we dont use `language-` classes anymore so that's why we need to add background and text color manually */
 
-    border-radius: 1rem;
+    border-radius: 3px;
     padding: 10px 5px;
     border: 1px solid #ced4da;
 
@@ -648,7 +648,7 @@ $shadow-box-padding: 20px;
     z-index: 10;
     background-color: rgba(white, 0.2);
     backdrop-filter: blur(2px);
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 3px 3px;
 
     .dark & {
         background-color: rgba($dark-header-bg, 0.9);

@@ -175,7 +175,7 @@ export default {
     align-items: center;
     gap: 10px;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 3px;
     transition: all ease-in-out 0.15s;
     justify-content: space-between;
     padding: 10px;
@@ -247,7 +247,7 @@ export default {
     display: block;
     font-size: 14px;
     background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 20px;
+    border-radius: 3px;
     padding: 0 10px;
     width: fit-content;
 
