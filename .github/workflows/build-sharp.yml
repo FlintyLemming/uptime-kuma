@@ -3,14 +3,7 @@ name: Build Sharp Image
 on:
   push:
     tags:
-      - "[0-9]*"
-  workflow_dispatch:
-    inputs:
-      tag:
-        description: "Upstream release tag used for the image tag (e.g. 2.5.0)"
-        required: true
-        default: "2.5.0"
-        type: string
+      - "*-sharp"
 
 permissions:
   contents: read
@@ -28,12 +21,9 @@ jobs:
       - name: Compute image tag
         id: meta
         run: |
-          TAG="${{ github.event.inputs.tag || github.ref_name }}"
-          if [ -z "$TAG" ]; then
-            echo "Error: cannot determine image tag"
-            exit 1
-          fi
-          echo "image_tag=${TAG}-sharp" >> "$GITHUB_OUTPUT"
+          # image tag = git tag name, e.g. pushing tag "2.5.0-sharp" builds
+          # ghcr.io/<owner>/uptime-kuma:2.5.0-sharp
+          echo "image_tag=${{ github.ref_name }}" >> "$GITHUB_OUTPUT"
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@c7c53464625b32c7a7e944ae62b3e17d2b600130 # v3.7.0
